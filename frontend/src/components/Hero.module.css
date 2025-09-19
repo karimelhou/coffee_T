@@ -1,0 +1,104 @@
+.hero {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  background: url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1800&q=80')
+      center/cover no-repeat;
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.45);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(15, 8, 5, 0.85) 30%, rgba(15, 8, 5, 0.3) 100%);
+}
+
+.inner {
+  position: relative;
+  padding: 4rem 3rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 1.2rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1.15;
+  margin: 0 0 1.2rem;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin-bottom: 2.2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.primary {
+  background: var(--color-caramel);
+  color: var(--color-espresso);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(197, 138, 74, 0.35);
+}
+
+.secondary {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: var(--color-cream);
+  transition: background 0.2s ease;
+}
+
+.secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    border-radius: 18px;
+    min-height: 60vh;
+    margin-top: 1.5rem;
+  }
+
+  .inner {
+    padding: 3rem 1.6rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

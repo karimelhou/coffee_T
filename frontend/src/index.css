@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #f4efe6;
+  background-color: #18100c;
+  --color-espresso: #2b1a15;
+  --color-mocha: #3d2b23;
+  --color-caramel: #c58a4a;
+  --color-cream: #f4efe6;
+  --color-hazelnut: #8d6949;
+  --color-muted: rgba(244, 239, 230, 0.65);
+  --color-overlay: rgba(24, 16, 12, 0.75);
+  --max-width: 1200px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-caramel);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #3d2b23 0%, #18100c 45%, #110806 100%);
+  color: var(--color-cream);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(197, 138, 74, 0.6);
+  border-radius: 999px;
+}
+
+::selection {
+  background: rgba(197, 138, 74, 0.4);
+  color: var(--color-cream);
+}

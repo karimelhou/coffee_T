@@ -1,0 +1,57 @@
+.footer {
+  background: rgba(14, 7, 4, 0.95);
+  border-top: 1px solid rgba(197, 138, 74, 0.2);
+  padding: 3rem 1.5rem 2rem;
+}
+
+.inner {
+  width: min(100%, var(--max-width));
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+h3,
+h4 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+  color: var(--color-caramel);
+}
+
+p {
+  margin: 0.5rem 0 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.socialIcons a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(197, 138, 74, 0.15);
+  color: var(--color-cream);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.socialIcons a:hover {
+  background: rgba(197, 138, 74, 0.35);
+  transform: translateY(-2px);
+}
+
+.copy {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+  margin: 0;
+}

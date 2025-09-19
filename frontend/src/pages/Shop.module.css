@@ -1,0 +1,251 @@
+.page {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
+}
+
+.cartSection {
+  background: rgba(18, 10, 7, 0.92);
+  border-radius: 24px;
+  border: 1px solid rgba(197, 138, 74, 0.22);
+  padding: 2.5rem;
+  box-shadow: 0 30px 55px rgba(0, 0, 0, 0.35);
+}
+
+.cartHeader h1 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.1rem, 4vw, 2.7rem);
+}
+
+.cartHeader p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.error {
+  color: #ffb4a2;
+  margin-top: 1rem;
+}
+
+.success {
+  color: #b2f5ea;
+  margin-top: 1rem;
+}
+
+.empty {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cartList {
+  display: grid;
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.cartItem {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+  padding: 1rem 1.4rem;
+}
+
+.itemInfo {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.itemInfo img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.itemInfo h3 {
+  margin: 0 0 0.35rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.itemInfo p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+}
+
+.itemActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.quantityControls {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 999px;
+  padding: 0.35rem 0.6rem;
+  gap: 0.6rem;
+}
+
+.quantityControls button {
+  background: none;
+  color: var(--color-cream);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.quantityControls span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 600;
+  color: var(--color-caramel);
+}
+
+.remove {
+  background: none;
+  color: rgba(255, 255, 255, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.remove:hover {
+  color: #ffb4a2;
+}
+
+.checkoutSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.summaryBox {
+  background: rgba(18, 10, 7, 0.92);
+  border-radius: 18px;
+  border: 1px solid rgba(197, 138, 74, 0.2);
+  padding: 1.8rem;
+}
+
+.summaryBox h2 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.totalRow {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.note {
+  margin: 1.2rem 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+}
+
+.checkoutForm {
+  background: rgba(18, 10, 7, 0.92);
+  border-radius: 18px;
+  border: 1px solid rgba(197, 138, 74, 0.2);
+  padding: 2rem;
+  display: grid;
+  gap: 0.9rem;
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.28);
+}
+
+.checkoutForm h2 {
+  margin: 0 0 0.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.checkoutForm label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.checkoutForm input,
+.checkoutForm textarea {
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  color: var(--color-cream);
+  font-size: 0.95rem;
+}
+
+.checkoutForm textarea {
+  resize: vertical;
+}
+
+.checkoutForm button {
+  margin-top: 1rem;
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  background: var(--color-caramel);
+  color: var(--color-espresso);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.checkoutForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(197, 138, 74, 0.32);
+}
+
+.checkoutForm button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.syncing {
+  margin: 0;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartItem {
+    grid-template-columns: 1fr;
+  }
+
+  .itemActions {
+    justify-content: space-between;
+  }
+}
